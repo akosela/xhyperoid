@@ -58,7 +58,7 @@ You can choose to compile either version, or both. Here's what to do:
 
 	make xwin		# for xhyperoid (X version) only
 or
-	make svga		# for vhyperoid (svgalib version) only
+	make vga		# for vhyperoid (svgalib version) only
 or
 	make			# for both
 

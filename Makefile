@@ -32,11 +32,11 @@ CFLAGS+=-DSOUNDSDIR=\"$(SOUNDSDIR)\"
 OBJS=hyperoid.o roidsupp.o sound.o svga.o convxpm.o
 XOBJS=hyperoid.o roidsupp.o sound.o gtk.o
 
-all: xwin svga
+all: xwin vga
 
 xwin: xhyperoid
 
-svga: vhyperoid
+vga: vhyperoid
 
 vhyperoid: $(OBJS)
 	$(CC) -o vhyperoid $(OBJS) -lvga -lm
@@ -53,7 +53,7 @@ installdirs:
 # check at least one executable has been made
 check-made:
 	@if [ ! -f vhyperoid -a ! -f xhyperoid ]; then \
-	  echo 'do "make svga", "make xwin", or "make" first (see README).'; \
+	  echo 'do "make vga", "make xwin", or "make" first (see README).'; \
 	  false; \
 	fi
 
