@@ -56,13 +56,13 @@ http://www.svgalib.org for that.)
 
 You can choose to compile either version, or both. Here's what to do:
 
-	make x			# for xhyperoid (X version) only
+	make xwin		# for xhyperoid (X version) only
 or
-	make vga		# for vhyperoid (svgalib version) only
+	make svga		# for vhyperoid (svgalib version) only
 or
 	make			# for both
 
-If you don't know what to do, `make x' is probably safest.
+If you don't know what to do, `make xwin' is probably safest.
 
 After that's finished, do (as root) `make install'. And as I say, be
 sure to read the man page. :-)
